@@ -4,7 +4,7 @@
             <p>2023 &copy; Template</p>
         </div>
         <div class="float-end">
-            <p>with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a href="">DEVELOP Template</a></p>
+            <p>with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a href="">DEVELOP E3N</a></p>
         </div>
     </div>
 </footer>
