@@ -9,7 +9,6 @@ use PHPMailer\PHPMailer\Exception;
 
 require_once __DIR__ . './../../Database/Database.class.php';
 
-
 class AppFunctions
 {
     public function generateToken()
@@ -24,6 +23,11 @@ class AppFunctions
     public function convertSlug($text)
     {
         return  preg_replace("/[^A-Za-z0-9\-\_ก-ฮเแ]/", '', $text);
+    }
+
+    public function debug($result)
+    {
+        return print("<pre>" . print_r($result, true) . "</pre>");
     }
 }
 
