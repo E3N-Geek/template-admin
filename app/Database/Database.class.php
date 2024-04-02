@@ -8,9 +8,9 @@ use PDOException;
 class DB
 {
     private $host = "localhost";
-    private $dbname = "e_staff";
-    private $user = "root";
-    private $password = "";
+    private $dbname = "Staff_Rmutto";
+    private $user = "itadmin";
+    private $password = "It@dm1n!";
 
     private $where = null ?? [];
     private $toSql = null;
@@ -225,7 +225,7 @@ class DB
     public function get($fields = "*", $tablename = "", $where = "")
     {
         try {
-            
+
             $sql = "SELECT $fields FROM " . $this->setTable() . "$tablename $where";
             $stmt = $this->connect()->prepare($sql);
             $stmt->execute();
