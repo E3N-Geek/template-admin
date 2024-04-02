@@ -8,8 +8,8 @@
 
     <link rel="stylesheet" href="<?= $uri; ?>public/assets/css/main/app.css">
     <link rel="stylesheet" href="<?= $uri; ?>public/assets/css/main/app-dark.css">
-    <link rel="apple-touch-icon" href="<?= $uri; ?>public/app-assets/logo/RMUTTO.png">
-    <link rel="shortcut icon" type="image/x-icon" href="<?= $uri; ?>public/app-assets/logo/small.ico">
+    <link rel="apple-touch-icon" href="<?= $uri; ?>public/app-assets/images/RMUTTO.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= $uri; ?>public/app-assets/images/small.ico">
     <link rel="stylesheet" href="<?= $uri; ?>public/assets/css/shared/iconly.css">
 
     <!-- bootstrap css -->
@@ -29,7 +29,7 @@
                 <div class="sidebar-header position-relative">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="logo">
-                            <a href="index.html"><img src="<?= $uri; ?>public/assets/images/logo/logo.svg" alt="Logo" srcset=""></a>
+                            <a href="<?= $uri; ?>home"><img src="<?= $uri; ?>public/assets/images/logo/logo.svg" alt="Logo" srcset=""></a>
                         </div>
                         <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--system-uicons" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21">
