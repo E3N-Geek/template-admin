@@ -11,13 +11,13 @@ require_once __DIR__ . './../app/Http/autoload.php';
 // header("Access-Control-Max-Age: 3600");
 // header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-$data = [];
-$app = new DB;
-$result = $app->getSQL('*', 'DS2001_Staff_Schema');
-// echo '<pre>';
-// $func = new AppFunctions;
-// $func->debug($result);
-foreach ($result ?? [] as $row) :
-    $data[] = $row;
-endforeach;
-echo json_encode($data);
+// $data = [];
+// $app = new DB;
+// $result = $app->getSQL('*', '');
+// // echo '<pre>';
+// // $func = new AppFunctions;
+// // $func->debug($result);
+// foreach ($result ?? [] as $row) :
+//     $data[] = $row;
+// endforeach;
+// echo json_encode($data);
