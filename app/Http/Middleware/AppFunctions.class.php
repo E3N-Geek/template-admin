@@ -29,6 +29,28 @@ class AppFunctions
     {
         return print("<pre>" . print_r($result, true) . "</pre>");
     }
+
+    public function formatCard($id)
+    {
+        $one = substr($id, 0, 1);
+        $onemore = $one . "-";
+        $two = substr($id, 1, 4);
+        $twomore = $two . "-";
+        $three = substr($id, 5, 5);
+        $threemore = $three . "-";
+        $four = substr($id, 10, 2);
+        $fourmore = $four . "-";
+        $five = substr($id, 12, 1);
+        $fivemore = $five;
+        $oneid = str_replace($one, $onemore, $one);
+        $twoid = str_replace($two, $twomore, $two);
+        $threeid = str_replace($three, $threemore, $three);
+        $fourid = str_replace($four, $fourmore, $four);
+        $fiveid = str_replace($five, $fivemore, $five);
+
+        $newid = $oneid . $twoid . $threeid . $fourid . $fiveid;;
+        return $newid;
+    }
 }
 
 class ConvertBaht
@@ -228,7 +250,7 @@ class GetNotify
          * info_arit@rmutto.ac.th <br>
          * ]
          */
-        require_once __DIR__ . './../lib/autoload.php';
+        require_once __DIR__ . './../../lib/autoload.php';
 
         $mail = new PHPMailer;
         $mail->isSMTP();

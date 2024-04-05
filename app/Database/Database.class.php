@@ -295,6 +295,31 @@ class DB
         }
     }
 
+    public function update($tablename = "", $values = array(), $where = "")
+    {
+        try {
+            foreach ($values as $k => $v) {
+                $param[] = $k . ' = :' . $k;
+            }
+            $val = implode(', ', $param);
+            $sql = "UPDATE " . $this->setTable() . "$tablename SET $val " . $where;
+            $stmt = $this->connect()->prepare($sql);
+            foreach ($values as $k => $v) {
+                $stmt->bindParam(":$k", $v);
+            }
+            $paraam = array_merge($this->bind, $values);
+            if ($stmt->execute($paraam)) {
+                $result = true;
+            } else {
+                $result = false;
+            }
+            return $result;
+        } catch (PDOException $e) {
+            echo $this->error = $e->getMessage();
+            return false;
+        }
+    }
+
     public function deleteSQL($tablename = "")
     {
         try {

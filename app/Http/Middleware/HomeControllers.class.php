@@ -10,7 +10,7 @@ class Routing
 
     public function __construct($basePath)
     {
-        require __DIR__ . './../../lib/autoload.php';
+        require 'lib/autoload.php';
         $this->router = new Router();
         $this->router->setBasePath($basePath);
     }

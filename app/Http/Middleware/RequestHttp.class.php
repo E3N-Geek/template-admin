@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware\RequestHttp;
 
-require_once __DIR__ . './../../lib/autoload.php';
+require_once __DIR__ . './../../../lib/autoload.php';
 
 class RequestClient
 {

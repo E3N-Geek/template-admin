@@ -13,11 +13,11 @@ require_once __DIR__ . './../app/Http/autoload.php';
 
 $data = [];
 $app = new DB;
-$result = $app->getSQL('*', 'ds2001_staff_schema');
+$result = $app->getSQL('*', 'DS2001_Staff_Schema');
 // echo '<pre>';
-$func = new AppFunctions;
-$func->debug($result);
-// foreach ($result ?? [] as $row) :
-//     // $data[] = $row;
-// endforeach;
-// echo json_encode($data);
+// $func = new AppFunctions;
+// $func->debug($result);
+foreach ($result ?? [] as $row) :
+    $data[] = $row;
+endforeach;
+echo json_encode($data);
