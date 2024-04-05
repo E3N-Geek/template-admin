@@ -1,5 +1,0 @@
-{
-    "require": {
-        "mpdf/qrcode": "^1.2"
-    }
-}
