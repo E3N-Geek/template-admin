@@ -15,7 +15,7 @@ class Response
         echo json_encode($response);
     }
 
-    public static function error($errMessage = 'Not Found', $code = 404)
+    public static function error($errMessage = "", $code = "")
     {
         $response = array(
             'status' => false,

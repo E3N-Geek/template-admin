@@ -191,9 +191,7 @@ class DB
                 $this->result = null;
             }
             $this->error = null;
-            if (is_array($this->result) || is_object($this->result)) {
-                return $this->result;
-            }
+            return $this->result;
         } catch (\PDOException $e) {
             $this->error = $e->getMessage();
             return false;
@@ -213,9 +211,7 @@ class DB
                 $this->result = null;
             }
             $this->error = null;
-            if (is_array($this->result) || is_object($this->result)) {
-                return $this->result;
-            }
+            return $this->result;
         } catch (\PDOException $e) {
             $this->error = $e->getMessage();
             return false;
